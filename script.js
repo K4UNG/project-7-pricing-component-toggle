@@ -14,7 +14,7 @@ toggle.onclick = () => {
     else {
         priceOne.innerHTML = '&dollar;19.99';
         priceTwo.innerHTML = '&dollar;24.99';
-        priceThree.innreHTML = '&dollar;39.99';
+        priceThree.innerHTML = '&dollar;39.99';
 
     }
 }

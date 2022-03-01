@@ -173,3 +173,39 @@
     border: 2px solid var(--gradient-second);
 }
 
+@media (max-width: 1050px) {
+    .card,
+    .card-s {
+        width: 270px;
+    }
+
+    .price,
+    .price-s {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 40px 0;
+        margin: 20px;
+    }
+
+    .main {
+        height: auto;
+        padding: 30px 0;
+    }
+    .card,
+    .card-s {
+        width: 300px;
+    }
+
+    .price,
+    .price-s {
+        font-size: 4rem;
+    }
+}
