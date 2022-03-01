@@ -156,7 +156,8 @@
 }
 
 .btn {
-    color: white;
+    color: var(--gradient-second);
+    background-color: white;
 }
 
 .btn:hover {
