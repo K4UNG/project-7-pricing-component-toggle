@@ -158,23 +158,25 @@
 .btn {
     color: var(--gradient-second);
     background-color: white;
+    border: 2px solid var(--gradient-second);
 }
 
 .btn:hover {
     background: transparent;
-    border: 2px solid white;
+    border-color: white;
     color: white;
 }
 
 .btn-s {
     background-image: linear-gradient(to right, var(--gradient-first), var(--gradient-second));
     color: white;
+    border: 2px solid white;
 }
 
 .btn-s:hover {
     background: transparent;
     color: var(--gradient-second);
-    border: 2px solid var(--gradient-second);
+    border-color: var(--gradient-second);
 }
 
 @media (max-width: 1050px) {
