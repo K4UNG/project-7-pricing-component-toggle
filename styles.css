@@ -80,12 +80,12 @@
     height: 25px;
     background-color: white;
     border-radius: 50%;
-    transform: scale(.75);
+    transform: scale(.77) translateX(100%);
     transition: .2s ease;
 }
 
 .active {
-    transform: scale(.77) translateX(100%);
+    transform: scale(.7);
 }
 
 .cards {
