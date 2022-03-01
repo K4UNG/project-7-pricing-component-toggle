@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --very-light-gray-blue: hsl(240, 78%, 98%);
+    --light-gray-blue: hsl(234, 14%, 74%);
+    --gray-blue: hsl(233, 13%, 49%);
+    --dark-gray-blue: hsl(232, 13%, 33%);
+
+    --gradient-first: hsl(236, 72%, 79%);
+    --gradient-second: hsl(237, 63%, 64%);
+}
+
+.main {
+    height: 100vh;
+    background-color: var(--very-light-gray-blue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.heading {
+    z-index: 1;
+    font-weight: 700;
+    color: var(--dark-gray-blue);
+}
+
+.container {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.toggle {
+    width: 45px;
+    height: 25px;
+    background-image: linear-gradient(to right, var(--gradient-first), var(--gradient-second));
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20px;
+}
+
+.container span {
+    color: var(--gray-blue);
+    font-weight: 700;
+}
+
+.switch {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(.75);
+    transition: .2s ease;
+}
+
+.active {
+    transform: scale(.77) translateX(100%);
+}
+
+.cards {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card,
+.card-s {
+    width: 330px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px 10px rgba(0,0,0,.05);
+}
+
+.card {
+    color: white;
+    background-image: linear-gradient(var(--gradient-first), var(--gradient-second));
+    padding: 60px 0;
+}
+
+.card-s {
+    background-color: white;
+    padding: 40px 0;
+    color: var(--dark-gray-blue);
+}
+
+.price,
+.price-s {
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.divider {
+    width: 80%;
+    opacity: .2;
+}
+
+.card .divider {
+    border: 1px solid white;
+}
+
+.card-s .divider {
+    border: 1px solid var(--dark-gray-blue);
+}
+
+.element {
+    margin: 15px 0;
+    font-weight: 700;
+    font-size: 15px
+}
+
+.btn,
+.btn-s {
+    margin-top: 30px;
+    width: 80%;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.btn {
+    color: var(--gradient-second);
+}
+
+.btn:hover {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-s {
+    background-image: linear-gradient(to right, var(--gradient-first), var(--gradient-second));
+    color: white;
+}
+
+.btn-s:hover {
+    background: transparent;
+    color: var(--gradient-second);
+    border: 2px solid var(--gradient-second);
+}
+
