@@ -65,6 +65,8 @@
     cursor: pointer;
     position: relative;
     margin: 0 20px;
+
+    border: none;
 }
 
 .container span {
