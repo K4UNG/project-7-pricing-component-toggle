@@ -158,12 +158,11 @@
 .btn {
     color: var(--gradient-second);
     background-color: white;
-    border: 2px solid var(--gradient-second);
+    border: 2px solid white;
 }
 
 .btn:hover {
     background: transparent;
-    border-color: white;
     color: white;
 }
 
